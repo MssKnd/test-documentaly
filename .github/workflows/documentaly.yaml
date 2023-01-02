@@ -1,0 +1,15 @@
+name: documentaly
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+env:
+  base_branch: main
+jobs:
+  check_and_comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: documentaly
+        uses: mssknd/documentaly@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          base_branch: main

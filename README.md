@@ -1,1 +1,5 @@
+---
+dependentFilePaths: ['.']
+---
+
 # test-documentaly
